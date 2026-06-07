@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Card component</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-10">
+
+  <h1 class="text-2xl font-bold mb-6">Card Component States</h1>
+
+  <!-- GRID LAYOUT -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <!-- DEFAULT CARD -->
+    <div class="rounded-xl border border-gray-200 bg-white p-5 transition hover:-translate-y-1 hover:shadow-lg">
+      <h3 class="font-semibold text-lg mb-2">Default Card</h3>
+      <p class="text-gray-600 text-sm">
+        This is the default card state with hover lift effect.
+      </p>
+    </div>
+
+    <!-- HOVER CARD (same base, emphasized label) -->
+    <div class="rounded-xl border border-gray-200 bg-white p-5 transition hover:-translate-y-1 hover:shadow-lg">
+      <h3 class="font-semibold text-lg mb-2">Hover Card</h3>
+      <p class="text-gray-600 text-sm">
+        Hover to see lift + shadow interaction.
+      </p>
+    </div>
+
+    <!-- FEATURED CARD -->
+    <div class="rounded-xl border-2 border-blue-500 bg-white p-6 scale-105 shadow-md transition hover:-translate-y-1 hover:shadow-xl">
+
+      <div class="flex items-center justify-between mb-2">
+        <h3 class="font-semibold text-lg text-blue-600">Featured Card</h3>
+        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full">
+          Featured
+        </span>
+      </div>
+
+      <p class="text-gray-700 text-sm">
+        This card is highlighted with stronger border, scale, and emphasis styling.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
+</body>
+
+</html>
